@@ -1,1 +1,8 @@
-<p>board works!</p>
+<mat-card>
+    <div class="board">
+      <div *ngFor="let row of service.getBoard(); let y = index">
+        <div *ngFor="let cell of row; let x = index" [ngClass]="getCellClass(x, y)"></div>
+      </div>
+    </div>
+  </mat-card>
+  

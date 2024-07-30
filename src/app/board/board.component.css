@@ -1,0 +1,20 @@
+.board {
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1px;
+  }
+  
+  .board div {
+    width: 30px;
+    height: 30px;
+    background-color: lightgray;
+  }
+  
+  .board .filled {
+    background-color: darkblue;
+  }
+  .board div {
+    transition: background-color 0.2s ease;
+  }
+  
