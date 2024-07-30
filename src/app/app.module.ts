@@ -7,6 +7,10 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { GameComponent } from './game/game.component';
 import { BoardComponent } from './board/board.component';
 import { ControlsComponent } from './controls/controls.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { ControlsComponent } from './controls/controls.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCardModule,
+    MatGridListModule
   ],
   providers: [
     provideClientHydration(),
